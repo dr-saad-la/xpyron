@@ -1,0 +1,40 @@
+[project]
+name = "xpyron"
+version = "0.1.0"
+description = """
+A comprehensive educational deep learning framework designed to illuminate neural network concepts through intuitive implementations and visual demonstrations. Xpyron combines rigorous mathematical foundations with clear visual representations, making complex deep learning concepts accessible to students, researchers, and practitioners. Features include step-by-step network construction, interactive visualizations, and hands-on tutorials covering everything from basic perceptrons to advanced architectures.
+"""
+
+readme = "README.md"
+authors = [
+    { name = "Dr.Saad.L", email = "56449463+dr-saad-la@users.noreply.github.com" }
+]
+keywords = ["deep-learning", "neural-networks", "education", "machine-learning", "visualization", "artificial-intelligence"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Education :: Computer Aided Instruction (CAI)",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=1.24.0",
+    "matplotlib>=3.7.0",
+    "scikit-learn>=1.2.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/dr-saad-la/xpyron"
+Documentation = "https://xpyron.readthedocs.io"
+Repository = "https://github.com/dr-saad-la/xpyron"
+Issues = "https://github.com/dr-saad-la/xpyron/issues"
+
+[project.scripts]
+xpyron = "xpyron:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
